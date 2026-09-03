@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-//iss class ka object managemnt jpa karega yaha pe controller class se json query ayegi aur java mai cover hogi phir wo sql ke form orm banega object relational model
+
 public class Student {
     public Long getId() {
         return id;

@@ -12,9 +12,9 @@ import java.util.List;
 import static org.springframework.http.ResponseEntity.*;
 
 @RestController
-@RequestMapping("/api/Students") // isse allow karega kon kon si request a sakti hai
+@RequestMapping("/api/Students")
 public class StudentController {
-    // 1 . sabse pehle post man se request yaha ake hit maregi
+
  //.create student
    private StudentService studentService;
     public StudentController(StudentService studentService) {
