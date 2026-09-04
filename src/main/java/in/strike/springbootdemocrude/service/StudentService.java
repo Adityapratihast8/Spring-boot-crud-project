@@ -61,13 +61,18 @@ public Student updateStudent(Long id , Student studentReq) {
 
 }
 // delete
-    public Boolean delteStudent(Long id) {
-        Boolean isstudent  = studentRepository.existsById(id);
-        if (!isstudent) return false ;
-        studentRepository.deleteById(id);
-        return true;
+public Boolean deleteStudent(Long id) {
 
+    Boolean isStudent = studentRepository.existsById(id);
+
+    if (!isStudent) {
+        return false;
     }
+
+    studentRepository.deleteById(id);
+
+    return true;
+}
 
 
 }

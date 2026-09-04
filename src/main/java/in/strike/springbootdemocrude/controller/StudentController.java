@@ -72,8 +72,8 @@ public class StudentController {
     //delete student
    @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> deleteStudent(@PathVariable Long id) {
-        Boolean isDeleted = studentService.delteStudent(id);
-        if(isDeleted){
+        Boolean isDeleted = studentService.deleteStudent(id);
+        if(!isDeleted){
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok("Deleted");
